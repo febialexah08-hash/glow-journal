@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💜 Skin Care Tracker</h1>
+    <p class="subtitle">Track your daily skincare routine</p>
+
+    <div class="card">
+
+        <label>Date</label>
+        <input type="date" id="date">
+
+        <label>Skin Condition</label>
+        <select id="condition">
+            <option>😊 Clear</option>
+            <option>😕 Acne</option>
+            <option>💧 Dry</option>
+            <option>✨ Oily</option>
+            <option>⚖️ Combination</option>
+        </select>
+
+        <label>Water Intake (Glasses)</label>
+        <input type="number" id="water" min="0" max="20" placeholder="Example: 8">
+
+        <label>Today's Routine</label>
+
+        <div class="checklist">
+            <label><input type="checkbox" id="cleanser"> Cleanser</label>
+            <label><input type="checkbox" id="toner"> Toner</label>
+            <label><input type="checkbox" id="moisturizer"> Moisturizer</label>
+            <label><input type="checkbox" id="sunscreen"> Sunscreen</label>
+        </div>
+
+        <label>Notes</label>
+        <textarea id="notes" rows="4" placeholder="Write today's skin notes..."></textarea>
+
+        <button onclick="saveData()">💾 Save Entry</button>
+
+    </div>
+
+    <div class="history">
+        <h2>📖 History</h2>
+        <div id="historyList"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
