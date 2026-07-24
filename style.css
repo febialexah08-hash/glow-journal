@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#8e2de2,#4a00e0);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#eee;
+    margin-bottom:20px;
+}
+
+.card,.history{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#5b21b6;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid #d8b4fe;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#8e2de2;
+}
+
+.checklist label{
+    display:block;
+    margin:8px 0;
+    font-weight:normal;
+    color:#333;
+}
+
+.checklist input{
+    width:auto;
+    margin-right:8px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    background:#8e2de2;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#6a0dad;
+}
+
+.history h2{
+    color:#6a0dad;
+    margin-bottom:15px;
+}
+
+.entry{
+    background:#f3e8ff;
+    border-left:6px solid #8e2de2;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:10px;
+}
+
+@media(max-width:600px){
+    .container{
+        max-width:100%;
+    }
+}
